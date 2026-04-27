@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kritsana — Data Architect & Analyst</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons only — removed animate.css (replaced with native CSS) & AOS (replaced with IntersectionObserver) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-brand">KK<span class="dot">.</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#educations">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="profile-wrapper reveal">
+        <img src="Image/Profile.png" alt="Kritsana Kraiwitanusorn" class="profile-img" loading="eager" />
+      </div>
+      <h1 class="hero-name reveal" data-delay="100">Kritsana Kraiwitanusorn</h1>
+      <p class="hero-role reveal" data-delay="200">Data Architect <span class="divider">&</span> Strategic Analyst</p>
+      <div class="hero-tags reveal" data-delay="300">
+        <span>SQL</span><span>SAS</span><span>Python</span><span>AI Agents</span><span>Prompt Engineering</span><span>7+ Years</span>
+      </div>
+      <a href="#contact" class="btn-primary reveal" data-delay="400">Get in touch</a>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="container">
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-card reveal" data-delay="100">
+        <p>
+          Data Architect & Strategic Analyst with <strong>7+ years</strong> of experience in Data Automation
+          and Pipeline Optimization for large-scale datasets. Expert in translating complex business rules into
+          robust programmatic logic and Credit Risk Analytics to mitigate portfolio risk and optimize sales incentives.
+        </p>
+        <p>
+          Highly proficient in <strong>SQL, SAS, and VBScript</strong>, automating daily reporting workflows with a
+          strong focus on building centralized Data Repositories and standardizing Master Data. Demonstrated ability
+          to transform complex business requirements into high-impact Lead Generation and Portfolio Monitoring systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="educations" class="section">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="educations-container">
+        <div class="education-card reveal" data-delay="100">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <span class="edu-label">Bachelor's Degree</span>
+            <h3>Applied Statistics <em>(2nd Class Honors, GPA 3.33)</em></h3>
+            <p>King Mongkut's University of Technology North Bangkok — Faculty of Applied Science</p>
+            <span class="duration">2011 – 2015</span>
+          </div>
+        </div>
+        <div class="education-card reveal" data-delay="200">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-body">
+            <span class="edu-label">Master's Degree</span>
+            <h3>Materials Handling & Logistics <em>(GPA 3.80)</em></h3>
+            <p>King Mongkut's University of Technology North Bangkok — Faculty of Engineering</p>
+            <span class="duration">2016 – 2018</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="experience-timeline">
+
+        <div class="experience-item reveal" data-delay="50">
+          <div class="exp-dot"></div>
+          <div class="experience-content" role="button" tabindex="0"
+               onclick="openModal('ThaiCredit')" onkeypress="if(event.key==='Enter') openModal('ThaiCredit')">
+            <span class="exp-period">Apr 2022 – Present</span>
+            <h3>Data Center & Data Analyst</h3>
+            <p class="exp-company">ThaiCredit Bank Co., Ltd.</p>
+            <span class="exp-cta">View Details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="experience-item reveal" data-delay="100">
+          <div class="exp-dot"></div>
+          <div class="experience-content" role="button" tabindex="0"
+               onclick="openModal('Promise')" onkeypress="if(event.key==='Enter') openModal('Promise')">
+            <span class="exp-period">Apr 2021 – Mar 2022</span>
+            <h3>Sales Planning</h3>
+            <p class="exp-company">Promise (Thailand) Co., Ltd.</p>
+            <span class="exp-cta">View Details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="experience-item reveal" data-delay="150">
+          <div class="exp-dot"></div>
+          <div class="experience-content" role="button" tabindex="0"
+               onclick="openModal('Mahakit')" onkeypress="if(event.key==='Enter') openModal('Mahakit')">
+            <span class="exp-period">Aug 2018 – Mar 2021</span>
+            <h3>Business Development & Logistics</h3>
+            <p class="exp-company">Mahakit Rubber Co., Ltd.</p>
+            <span class="exp-cta">View Details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="experience-item reveal" data-delay="200">
+          <div class="exp-dot"></div>
+          <div class="experience-content" role="button" tabindex="0"
+               onclick="openModal('CJ')" onkeypress="if(event.key==='Enter') openModal('CJ')">
+            <span class="exp-period">Nov 2017 – Jul 2018</span>
+            <h3>Supply Chain Management</h3>
+            <p class="exp-company">CJ Express Group Co., Ltd.</p>
+            <span class="exp-cta">View Details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="experience-item reveal" data-delay="250">
+          <div class="exp-dot"></div>
+          <div class="experience-content" role="button" tabindex="0"
+               onclick="openModal('KMUTNB')" onkeypress="if(event.key==='Enter') openModal('KMUTNB')">
+            <span class="exp-period">Feb 2016 – Aug 2016</span>
+            <h3>Research Assistance</h3>
+            <p class="exp-company">KMUTNB</p>
+            <span class="exp-cta">View Details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE MODALS ===== -->
+    <div id="ThaiCreditModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="tc-title">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeModal('ThaiCredit')" aria-label="Close">&times;</button>
+        <h2 id="tc-title">Data Center & Data Analyst</h2>
+        <div class="modal-body">
+          <h3>ThaiCredit Bank Co., Ltd.</h3>
+          <p class="duration">Apr 2022 – Present</p>
+          <div class="responsibilities">
+            <h4>Core Responsibilities</h4>
+            <ul>
+              <li>Developed and maintained daily automated Setup Reports using SQL, VBScript, SAS, and VBA, ensuring data integrity and timely delivery.</li>
+              <li>Produced daily Portfolio Monitoring Reports by extracting and processing data using SQL/SAS to track key business indicators.</li>
+              <li>Managed data querying and daily report generation for the MicroPlus product portfolio, supporting data migration to the bank's core platform.</li>
+              <li>Performed ETL processes on Top-up Loan application data to facilitate downstream analysis and decision-making.</li>
+              <li>Provided cross-functional data support by developing custom SQL queries and specialized reports for various departments.</li>
+              <li>Executed data cleansing and quality improvement initiatives for Market Master Data.</li>
+              <li>Conducted rigorous UAT and data cleansing prior to deploying data into the production environment.</li>
+              <li>Prepared and delivered regulatory reports to the Bank of Thailand (BOT), including emergency reports (e.g., Flood Impact).</li>
+              <li>Generated RDT reports to support internal and external audit requirements and performance evaluations.</li>
+              <li>Developed an automated notification system using Webhooks integrated with Line Notify and MS Teams.</li>
+              <li>Performed Payment Type Clustering Analysis to segment customer behavior and identify strategic opportunities.</li>
+              <li>Conducted Utilization Rate Analysis to forecast trends and optimize resource allocation.</li>
+              <li>Analyzed the effectiveness of Acquire Rating thresholds to enhance credit approval accuracy.</li>
+              <li>Assessed the impact of TM Score thresholds on the approval process, aligned with BRD standards.</li>
+              <li>Managed and scheduled automated data processes to ensure seamless, continuous operation.</li>
+              <li>Monitored and maintained accuracy of parameters, data tables, and master data within the database.</li>
+              <li>Tracked critical portfolio quality indicators: Setup Rate, Flowrate, Default Rate, and NPL.</li>
+              <li>Monitored Approver Quality Reports to evaluate staff performance and mitigate risk exposure.</li>
+              <li>Maintained and updated the Branch Structure within the database to reflect organizational changes.</li>
+              <li>Ensured compliance with organizational data classification policies for all Portfolio Team assets.</li>
+              <li>Performed Web Scraping using Python to gather external data sources for enriched business intelligence.</li>
+              <li><strong>Technical Stack:</strong> SQL (Advanced), SAS, Python, VBA/VBScript, Excel (Advanced), Power Query.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="PromiseModal" class="modal" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeModal('Promise')" aria-label="Close">&times;</button>
+        <h2>Sales Planning</h2>
+        <div class="modal-body">
+          <h3>Promise (Thailand) Co., Ltd.</h3>
+          <p class="duration">Apr 2021 – Mar 2022</p>
+          <div class="responsibilities">
+            <h4>Core Responsibilities</h4>
+            <ul>
+              <li>Performed analysis on overall, team, and individual performance to identify business opportunities.</li>
+              <li>Generated, automated, and produced performance and operational reports and dashboards.</li>
+              <li>Developed and enhanced data capabilities and visualization tools.</li>
+              <li>Developed automation tools to improve operational effectiveness.</li>
+              <li>Maintained and supported tools, reports, and dashboards.</li>
+              <li>Validated performance and benefit data for completeness and accuracy.</li>
+              <li>Assisted strategic projects related to data analysis, reporting, and automated systems.</li>
+              <li>Participated in performance tuning to improve SAS batch job processing.</li>
+            </ul>
+          </div>
+          <div class="achievements">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Coordinated with internal function leaders to drive and implement process improvement projects.</li>
+              <li>Provided pros & cons analysis of Power BI for management and advised on key benefits and trends.</li>
+              <li>Conducted SQL knowledge transfer sessions for internal officers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="MahakitModal" class="modal" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeModal('Mahakit')" aria-label="Close">&times;</button>
+        <h2>Business Development & Logistics</h2>
+        <div class="modal-body">
+          <h3>Mahakit Rubber Co., Ltd.</h3>
+          <p class="duration">Aug 2018 – Mar 2021</p>
+          <div class="responsibilities">
+            <h4>Core Responsibilities</h4>
+            <ul>
+              <li>Analyzed and organized advance transportation bookings with approved suppliers for each routing.</li>
+              <li>Updated and maintained transportation data for planning/tendering and shipment consolidation.</li>
+              <li>Managed client relationships using statistical analytics to justify costs and develop logistics solutions.</li>
+              <li>Maintained and updated sales performance database: collected, managed, and cleaned monthly data.</li>
+              <li>Analyzed sales performance data and provided executive summaries to business leaders monthly.</li>
+              <li>Provided forecast & availability reports for Sales and Purchase in a timely and efficient manner.</li>
+            </ul>
+          </div>
+          <div class="achievements">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Contributed to production planning improvement project: developed production plans, budgets, and timelines based on plant capacity and specifications.</li>
+              <li>Contributed to production process improvement project: solved problems through workflow improvement, line balancing, and staff skills development.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="CJModal" class="modal" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeModal('CJ')" aria-label="Close">&times;</button>
+        <h2>Supply Chain Management</h2>
+        <div class="modal-body">
+          <h3>CJ Express Group Co., Ltd.</h3>
+          <p class="duration">Nov 2017 – Jul 2018</p>
+          <div class="responsibilities">
+            <h4>Core Responsibilities</h4>
+            <ul>
+              <li>Monitored and analyzed distribution centre store data to manage inventory flow and communicated action plans to the Operations Team.</li>
+              <li>Identified problems related to store management.</li>
+              <li>Analyzed consumer trends and insights to identify marketing opportunities quarterly.</li>
+              <li>Provided other sales support as assigned.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="KMUTNBModal" class="modal" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeModal('KMUTNB')" aria-label="Close">&times;</button>
+        <h2>Research Assistance</h2>
+        <div class="modal-body">
+          <h3>KMUTNB</h3>
+          <p class="duration">Feb 2016 – Aug 2016</p>
+          <div class="responsibilities">
+            <h4>Core Responsibilities</h4>
+            <ul>
+              <li>Assisted researchers in the field of logistics.</li>
+              <li>Supported research studies and data collection.</li>
+              <li>Performed other tasks as assigned.</li>
+            </ul>
+          </div>
+          <div class="achievements">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Enterprise Resource Planning (ERP).</li>
+              <li>Logistics Cost Reduction.</li>
+              <li>Labor and Logistics Productivity Improvement.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="skills-container">
+
+        <div class="skills-category reveal" data-delay="50">
+          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Data Analysis</h3>
+          <div class="chips">
+            <span class="chip">Statistical Analysis</span>
+            <span class="chip">Data Cleansing</span>
+            <span class="chip">Data Manipulation</span>
+            <span class="chip">Data Visualization</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Data Warehousing</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal" data-delay="100">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="chips">
+            <span class="chip">SQL</span>
+            <span class="chip">SAS Base & EG</span>
+            <span class="chip">Python</span>
+            <span class="chip">R</span>
+            <span class="chip">VBA / VBScript</span>
+            <span class="chip">SPSS</span>
+            <span class="chip">Minitab</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal" data-delay="150">
+          <div class="skill-icon"><i class="fas fa-eye"></i></div>
+          <h3>Visualization</h3>
+          <div class="chips">
+            <span class="chip">Power BI</span>
+            <span class="chip">Looker Studio</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Excel (Advanced)</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal" data-delay="200">
+          <div class="skill-icon"><i class="fas fa-users"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="chips">
+            <span class="chip">Critical Thinking</span>
+            <span class="chip">Problem-Solving</span>
+            <span class="chip">Communication</span>
+            <span class="chip">Attention to Detail</span>
+            <span class="chip">Teamwork</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+      <h2 class="section-title reveal">Certificates</h2>
+      <div class="certificates-grid">
+        <div class="cert-card reveal" data-delay="50"  onclick="openGalleryModal('DataCamp')">
+          <img src="Image/data-camp.jpg" alt="DataCamp" loading="lazy" />
+          <div class="cert-label"><span>DataCamp</span><i class="fas fa-images"></i></div>
+        </div>
+        <div class="cert-card reveal" data-delay="100" onclick="openGalleryModal('365 Data Science')">
+          <img src="Image/365-data-science.jpg" alt="365 Data Science" loading="lazy" />
+          <div class="cert-label"><span>365 Data Science</span><i class="fas fa-images"></i></div>
+        </div>
+        <div class="cert-card reveal" data-delay="150" onclick="openGalleryModal('DataRockie')">
+          <img src="Image/DataRockie.jpg" alt="DataRockie" loading="lazy" />
+          <div class="cert-label"><span>DataRockie</span><i class="fas fa-images"></i></div>
+        </div>
+        <div class="cert-card reveal" data-delay="200" onclick="openGalleryModal('MOOCs')">
+          <img src="Image/Mooc.jpg" alt="MOOCs" loading="lazy" />
+          <div class="cert-label"><span>MOOCs</span><i class="fas fa-images"></i></div>
+        </div>
+        <div class="cert-card reveal" data-delay="250" onclick="openGalleryModal('DIGI')">
+          <img src="Image/DIGI.jpg" alt="DIGI" loading="lazy" />
+          <div class="cert-label"><span>DIGI</span><i class="fas fa-images"></i></div>
+        </div>
+        <div class="cert-card reveal" data-delay="300" onclick="openGalleryModal('SAMSUNG')">
+          <img src="Image/SamsungCa.png" alt="Samsung" loading="lazy" />
+          <div class="cert-label"><span>SAMSUNG</span><i class="fas fa-images"></i></div>
+        </div>
+        <div class="cert-card reveal" data-delay="350" onclick="openGalleryModal('BorntoDev')">
+          <img src="Image/BorntoDev1.png" alt="BorntoDev" loading="lazy" />
+          <div class="cert-label"><span>BorntoDev</span><i class="fas fa-images"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal" role="dialog" aria-modal="true" aria-label="Certificate gallery">
+      <div class="gallery-modal-content">
+        <button class="gallery-close" onclick="closeGalleryModal()" aria-label="Close gallery">&times;</button>
+        <div class="gallery-container">
+          <button class="gallery-nav prev" onclick="changeImage(-1)" aria-label="Previous">&#10094;</button>
+          <div class="gallery-main">
+            <img id="galleryImage" src="" alt="Certificate" />
+          </div>
+          <button class="gallery-nav next" onclick="changeImage(1)" aria-label="Next">&#10095;</button>
+        </div>
+        <div class="gallery-thumbnails" id="thumbnailContainer"></div>
+        <div class="gallery-details">
+          <h3 id="galleryTitle"></h3>
+          <p id="galleryDescription"></p>
+          <p id="completed" class="gallery-completed"></p>
+          <p class="gallery-counter">
+            <span id="currentImageNum">1</span> / <span id="totalImages">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="contact-grid reveal" data-delay="100">
+        <a class="contact-item" href="mailto:Kritsanakraiwitanusorn@gmail.com">
+          <i class="fas fa-envelope"></i>
+          <span>Kritsanakraiwitanusorn@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+66613848590">
+          <i class="fas fa-phone"></i>
+          <span>06-1384-8590</span>
+        </a>
+        <a class="contact-item" href="https://linkedin.com/in/kritsana-kraiwitanusorn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+          <span>linkedin.com/in/kritsana-kraiwitanusorn</span>
+        </a>
+        <a class="contact-item" href="https://github.com/Kritsana-Kraiwitanusorn" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+          <span>github.com/Kritsana-Kraiwitanusorn</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Kritsana Kraiwitanusorn — Data Architect & Analyst</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
